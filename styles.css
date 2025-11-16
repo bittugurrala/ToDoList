@@ -1,0 +1,22 @@
+:root{
+    --bg-image : url("https://img.freepik.com/premium-photo/crumpled-paper-texture-background-various-purposes-white-wrinkled-paper-texture_526818-3237.jpg ");
+    --color: #2F2C25;
+}
+
+.ToDo-container{
+    background-image: var(--bg-image);
+    width: 100vw; 
+    height : 100vh;
+    padding-top: 10rem;
+    background-size: cover;
+}
+.ToDo-input{
+    text-align: center;
+    border: 0px;
+}
+.heading{
+    color : var(--color);
+}
+.btn-dark{
+    background-color: var(--color);
+}
