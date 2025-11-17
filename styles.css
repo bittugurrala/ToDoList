@@ -1,22 +1,32 @@
 :root{
-    --bg-image : url("https://img.freepik.com/premium-photo/crumpled-paper-texture-background-various-purposes-white-wrinkled-paper-texture_526818-3237.jpg ");
-    --color: #2F2C25;
+    --bg : linear-gradient(135deg, #0a0f3d, #5323a6, #8a1f7a);
+    --todo-bg : White; 
+    --input-bg : #dadada;
 }
 
-.ToDo-container{
-    background-image: var(--bg-image);
-    width: 100vw; 
+.container-fluid{
+    background: var(--bg);
     height : 100vh;
-    padding-top: 10rem;
-    background-size: cover;
+    width: 100vw;
+    font-family: poppins;
+
 }
-.ToDo-input{
-    text-align: center;
-    border: 0px;
+.Todo-container{
+    margin-top: 5rem;
+    border-radius: 30px;
+    background-color: var(--todo-bg);
 }
 .heading{
-    color : var(--color);
+    font-size: 20px;
+
+
 }
-.btn-dark{
-    background-color: var(--color);
+.input{
+    background-color: var(--input-bg);
+    font-size: 12px;
+    border-radius: 20px;
+    color: #BBBCB6
+}
+.btn{
+    border-radius : 20px;
 }
