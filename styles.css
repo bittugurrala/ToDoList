@@ -2,11 +2,13 @@
     --bg : linear-gradient(135deg, #0a0f3d, #5323a6, #8a1f7a);
     --todo-bg : White; 
     --input-bg : #dadada;
+    --tasks-color : #BBBCB6;
+    --added-tasks : #708090;
 }
 
 .container-fluid{
     background: var(--bg);
-    height : 100vh;
+    min-height: 100vh;
     width: 100vw;
     font-family: poppins;
 
@@ -25,8 +27,27 @@
     background-color: var(--input-bg);
     font-size: 12px;
     border-radius: 20px;
-    color: #BBBCB6
+    color: var(--tasks-color)
 }
 .btn{
     border-radius : 20px;
 }
+.tasks{
+    color: var(--added-tasks);
+    background-color: var(--input-bg);
+    border-radius: 20px;
+}
+.check{
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--added-tasks);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.inner_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
