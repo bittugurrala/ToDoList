@@ -8,7 +8,7 @@
 
 .container-fluid{
     background: var(--bg);
-    min-height: 100vh;
+    height: 100%;
     width: 100vw;
     font-family: poppins;
 
@@ -42,7 +42,8 @@
     width: 20px;
     border: 1px solid var(--added-tasks);
     border-radius: 50%;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    margin-top:0.23rem;
 }
 
 .inner_div{
