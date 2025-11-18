@@ -68,6 +68,11 @@
     margin-right: 1rem;
     margin-top: 0.5rem;
     cursor: pointer;
+
+}
+.trash:hover{
+    border: 2px solid white;
+    border-radius: 5px;
 }
 .completed{
     text-decoration: line-through;

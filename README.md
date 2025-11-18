@@ -130,7 +130,7 @@ ToDo-App/
 
 ## Live Demo
 
-*(https://bittugurrala.github.io/ToDoList/)*
+<a href = "https://bittugurrala.github.io/ToDoList/">
 
 ---
 
