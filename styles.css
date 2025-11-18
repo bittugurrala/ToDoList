@@ -71,7 +71,9 @@
 }
 .completed{
     text-decoration: line-through;
-    color:gray;
+}
+.fa-solid{
+    color:#343A40;
 }
 
 

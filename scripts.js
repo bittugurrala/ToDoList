@@ -43,6 +43,7 @@ addTask = function(){
     innerDiv.appendChild(trashIcon);
     
     TodoInput.value= ""
+    saveData();
 
     leftGroupDiv.addEventListener("click", function(){
         if(!textValue.classList.contains("completed")){
@@ -64,3 +65,38 @@ TodoInput.addEventListener("keydown", function(event){
         addTask()
     }
 })
+
+function saveData(){
+    localStorage.setItem("task", tasksContainer.innerHTML)
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const saved = localStorage.getItem("task");
+    if (saved) tasksContainer.innerHTML = saved;
+});
+
+tasksContainer.addEventListener("click", function (event) {
+    const trashClicked = event.target.closest(".trash");
+    if (trashClicked) {
+        const inner = trashClicked.closest(".inner_div");
+        if (inner) {
+            inner.remove();
+            saveData();
+        }
+        return;
+    }
+    const leftGroup = event.target.closest(".textDiv");
+    if (leftGroup) {
+        const textValue = leftGroup.querySelector("p.text");
+        const circle = leftGroup.querySelector(".check");
+        if (!textValue) return;
+        if (!textValue.classList.contains("completed")) {
+            textValue.classList.add("completed");
+            if (circle) circle.innerHTML = `<i class="fa-solid fa-circle-check"></i>`;
+        } else {
+            textValue.classList.remove("completed");
+            if (circle) circle.innerHTML = `<i class="fa-regular fa-circle"></i>`;
+        }
+        saveData();
+    }
+});
