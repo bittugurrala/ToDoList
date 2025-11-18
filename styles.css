@@ -21,7 +21,6 @@
 .heading{
     font-size: 20px;
 
-
 }
 .input{
     background-color: var(--input-bg);
@@ -50,4 +49,7 @@
     flex-direction: row;
     justify-content: start;
 }
-
+.error-message{
+    font-size: 13px;
+    color: red;
+}
