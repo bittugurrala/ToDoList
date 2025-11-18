@@ -42,14 +42,36 @@
     border-radius: 50%;
     margin-right: 0.5rem;
     /* margin-top:0.23rem; */
+    cursor: pointer;
 }
 
 .inner_div{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-}
+    justify-content: space-between;
+} 
+
 .error-message{
     font-size: 13px;
     color: red;
 }
+.inner_div div p{
+    margin :0;
+    padding-left: 8px;
+
+}
+.textDiv{
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.trash{
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.completed{
+    text-decoration: line-through;
+    color:gray;
+}
+
+
