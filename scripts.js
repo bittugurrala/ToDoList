@@ -3,7 +3,9 @@ let TodoInput = document.getElementById("Todoinput")
 let tasksContainer = document.getElementById("tasksContainer");
 let error = document.getElementById("errorMessage");
 
-addButton.addEventListener("click", function(){
+
+
+addTask = function(){
     if (TodoInput.value.trim() === ""){
         error.textContent = "*Enter task to add "
         return;
@@ -52,5 +54,13 @@ addButton.addEventListener("click", function(){
             circle.innerHTML = `<i class="fa-regular fa-circle"></i>`;
         }
     })
+    
 
+}
+addButton.onclick = addTask
+
+TodoInput.addEventListener("keydown", function(event){
+    if(event.key === "Enter"){
+        addTask()
+    }
 })
