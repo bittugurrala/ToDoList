@@ -130,7 +130,7 @@ ToDo-App/
 
 ## Live Demo
 
-👉 *(Add your GitHub Pages / Netlify link here once deployed)*
+*(https://bittugurrala.github.io/ToDoList/)*
 
 ---
 
